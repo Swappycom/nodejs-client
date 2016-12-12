@@ -44,17 +44,15 @@ var SwappyRestApi = require('swappy_rest_api');
 var defaultClient = SwappyRestApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth
-var oauth = defaultClient.authentications['oauth'];
-oauth.accessToken = "YOUR ACCESS TOKEN";
+defaultClient.authentications.oauth.accessToken = "YOUR ACCESS TOKEN";
 
-var api = new SwappyRestApi.ProductsApi();
+var api = new SwappyRestApi.OauthApi();
 
-api.getProduct(body, {}, function(error, data, response) {
+api.getMe({}, function(error, data, response) {
     if (error) {
-        console.error(error);
-    } else {
-        console.log('API called successfully. Returned data: ' + data);
+        return console.error(error);
     }
+    console.log('Hello, you name is', data.first_name, data.last_name);
 });
 
 ```
