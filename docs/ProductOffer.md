@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**accept** | **Boolean** |  | [optional] 
+**enabled** | **Boolean** |  | [optional] 
 **acceptOver** | **Number** |  | [optional] 
 **refuseUnder** | **Number** |  | [optional] 
 

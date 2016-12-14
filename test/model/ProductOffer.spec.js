@@ -65,8 +65,8 @@
       //expect(instance).to.be.a(SwappyRestApi.ProductOffer);
     });
 
-    it('should have the property accept (base name: "accept")', function() {
-      // uncomment below and update the code to test the property accept
+    it('should have the property enabled (base name: "enabled")', function() {
+      // uncomment below and update the code to test the property enabled
       //var instane = new SwappyRestApi.ProductOffer();
       //expect(instance).to.be();
     });

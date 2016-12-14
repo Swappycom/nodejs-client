@@ -1153,7 +1153,7 @@
                 "offer": {
                     "type": "object",
                     "properties": {
-                        "accept": {
+                        "enabled": {
                             "type": "boolean"
                         },
                         "accept_over": {

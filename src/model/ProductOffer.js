@@ -72,8 +72,8 @@
     if (data) {
       obj = obj || new exports();
 
-      if (data.hasOwnProperty('accept')) {
-        obj['accept'] = ApiClient.convertToType(data['accept'], 'Boolean');
+      if (data.hasOwnProperty('enabled')) {
+        obj['enabled'] = ApiClient.convertToType(data['enabled'], 'Boolean');
       }
       if (data.hasOwnProperty('accept_over')) {
         obj['accept_over'] = ApiClient.convertToType(data['accept_over'], 'Number');
@@ -86,9 +86,9 @@
   }
 
   /**
-   * @member {Boolean} accept
+   * @member {Boolean} enabled
    */
-  exports.prototype['accept'] = undefined;
+  exports.prototype['enabled'] = undefined;
   /**
    * @member {Number} accept_over
    */
