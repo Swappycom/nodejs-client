@@ -1,0 +1,5 @@
+.idea
+swagger.json
+generate.sh
+codegen-config.json
+swagger-codegen-cli.jar
